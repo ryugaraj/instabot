@@ -1,8 +1,8 @@
 from instapy import InstaPy
-
+import os
 #Login
 session = InstaPy(username="scarlettjohansonoffcial", password="kj816g197a",
-                            geckodriver_path='geckodriver.exe',
+                            geckodriver_path=os.environ.get("GECKODRIVER_PATH"),
                             headless_browser=True)
 
 session.login()
