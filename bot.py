@@ -1,9 +1,9 @@
 from instapy import InstaPy
 import os
 #Login
-browser = os.environ.get("FIREFOX_BIN")
+browser = os.environ.get("GECKODRIVER_PATH")
 session = InstaPy(username="scarlettjohansonoffcial", password="kj816g197a",
-                            geckodriver_path=os.environ.get("GECKODRIVER_PATH"), browser_executable_path = browser,
+                            browser_executable_path = browser,
                             headless_browser=True)
 
 session.login()
