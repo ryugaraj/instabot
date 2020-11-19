@@ -2,9 +2,9 @@ from instapy import InstaPy
 from selenium import webdriver
 import os
 #Login 
-driver = webdriver.Firefox(executable_path=os.environ.get("FIREFOX_BIN"))
+#driver = webdriver.Firefox(executable_path=os.environ.get("FIREFOX_BIN"))
 session = InstaPy(username="scarlettjohansonoffcial", password="kj816g197a",
-                            geckodriver_path = os.environ.get("GECKODRIVER_PATH"), browser_executable_path=os.environ.get("FIREFOX_BIN"),
+                            browser_executable_path=os.environ.get("GECKODRIVER_PATH"),
                             headless_browser = True)
 
 session.login()
