@@ -27,6 +27,6 @@ def runner():
   #session.unfollow_users(amount=35, allFollowing=True, style="LIFO",
   #                       unfollow_after=24*60*60, sleep_delay=5)'''
   session.end()
- while 1:
+while 1:
   runner()
-  time.sleep(60)
+  time.sleep(30)
