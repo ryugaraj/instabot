@@ -16,13 +16,13 @@ def runner1():
                                peak_unfollows_hourly=35,
                                peak_unfollows_daily=402)
 
-  session.like_by_tags(['scarlettjohansson'], amount=30)
+  session.like_by_tags(['scarlettjohansson'], amount=50)
   session.set_do_comment(True, percentage=100)
   session.set_comments([u'My Girl is fire :fire:',
                         u'So Awesome :flushed:',
                         u'Amazing :heart_eyes:'])
 
-  session.follow_user_followers(['scarlettjohanssonworld'], amount=50,
+  session.follow_user_followers(['scarlettjohanssonworld'], amount=20,
                                 randomize=False, sleep_delay=10)
   '''session.unfollow_users(amount=30, allFollowing=True, style="LIFO",
                          unfollow_after=24*60*60, sleep_delay=5)'''
@@ -42,15 +42,15 @@ def runner2():
                                peak_unfollows_hourly=35,
                                peak_unfollows_daily=402)
 
-  session.like_by_tags(['coder'], amount=30)
+  session.like_by_tags(['coder'], amount=50)
   session.set_do_comment(True, percentage=100)
   session.set_comments([u'Nice :fire:',
                         u'So Awesome :flushed:',
                         u'Amazing :heart_eyes:'])
 
-  session.follow_user_followers(['codecademy'], amount=50,
+  session.follow_user_followers(['codecademy'], amount=20,
                                 randomize=False, sleep_delay=10)
 while 1:
   runner1()
   runner2()
-  time.sleep(3600)
+  time.sleep(1800)
