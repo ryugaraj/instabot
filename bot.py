@@ -4,18 +4,18 @@ import os
 import time
 #Login 
 def runner():
-  session = InstaPy(username="scarlettjohansonoffcial", password="kj816g197a",
+  session = InstaPy(username="checkmyinstabot", password="ryuga123!",
                               geckodriver_path = os.environ.get("GECKODRIVER_PATH"), browser_executable_path=os.environ.get("FIREFOX_BIN"),
                               headless_browser = True)
 
   session.login()
-  '''session.set_quota_supervisor(enabled=True,
+  session.set_quota_supervisor(enabled=True,
                                peak_likes_hourly=70,
                                peak_comments_hourly=21,
                                peak_follows_hourly=48,
                                peak_follows_daily=100,
                                peak_unfollows_hourly=35,
-                               peak_unfollows_daily=402)'''
+                               peak_unfollows_daily=402)
 
   session.like_by_tags(['scarlettjohansson'], skip_top_posts=True, amount=30)
   session.set_do_comment(True, percentage=100)
