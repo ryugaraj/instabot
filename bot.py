@@ -30,4 +30,4 @@ def runner():
   session.end()
 while 1:
   runner()
-  time.sleep(60)
+  time.sleep(600)
