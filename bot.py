@@ -49,9 +49,10 @@ def runner2():
                         u'So Awesome :flushed:',
                         u'Amazing :heart_eyes:'])
 
-  session.follow_user_followers([choose_acc], amount=1,
+  session.follow_user_followers([choose_acc], amount=50,
                                 randomize=False, sleep_delay=10)
 while 1:
   runner2()
-  runner1()
   time.sleep(1)
+  runner1()
+  
