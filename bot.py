@@ -22,7 +22,7 @@ def runner1():
                         u'So Awesome :flushed:',
                         u'Amazing :heart_eyes:'])
 
-  session.follow_user_followers(['scarlettjohanssonworld'], amount=20,
+  session.follow_user_followers(['scarlettjohanssonworld'], amount=50,
                                 randomize=False, sleep_delay=10)
   '''session.unfollow_users(amount=30, allFollowing=True, style="LIFO",
                          unfollow_after=24*60*60, sleep_delay=5)'''
@@ -48,7 +48,7 @@ def runner2():
                         u'So Awesome :flushed:',
                         u'Amazing :heart_eyes:'])
 
-  session.follow_user_followers(['codecademy'], amount=20,
+  session.follow_user_followers(['codecademy'], amount=50,
                                 randomize=False, sleep_delay=10)
 while 1:
   runner2()
