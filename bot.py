@@ -51,6 +51,6 @@ def runner2():
   session.follow_user_followers(['codecademy'], amount=20,
                                 randomize=False, sleep_delay=10)
 while 1:
-  runner1()
   runner2()
+  runner1()
   time.sleep(1800)
