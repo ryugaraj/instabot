@@ -17,7 +17,7 @@ def runner():
                                peak_unfollows_hourly=35,
                                peak_unfollows_daily=402)
 
-  session.like_by_tags(['scarlettjohansson'], skip_top_posts=True, amount=20)
+  session.like_by_tags(['scarlettjohansson'], skip_top_posts=True, amount=30)
   session.set_do_comment(True, percentage=100)
   session.set_comments([u'My Girl is fire :fire:',
                         u'So Awesome :flushed:',
