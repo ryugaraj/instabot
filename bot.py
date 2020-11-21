@@ -22,10 +22,10 @@ def runner():
                         u'So Awesome :flushed:',
                         u'Amazing :heart_eyes:'])
 
-  session.follow_user_followers(['scarlettjohanssonworld'], amount=1,
+  session.follow_user_followers(['scarlettjohanssonworld'], amount=50,
                                 randomize=False, sleep_delay=10)
-  session.unfollow_users(amount=1, allFollowing=True, style="LIFO",
-                         unfollow_after=24*60*60, sleep_delay=5)
+  '''session.unfollow_users(amount=30, allFollowing=True, style="LIFO",
+                         unfollow_after=24*60*60, sleep_delay=5)'''
   session.end()
 while 1:
   runner()
