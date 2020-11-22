@@ -53,6 +53,6 @@ def runner2():
                                 randomize=False, sleep_delay=10)
 while 1:
   #runner2()
-  time.sleep(1)
+  time.sleep(3600)
   runner1()
   
