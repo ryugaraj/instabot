@@ -52,7 +52,7 @@ def runner2():
   session.follow_user_followers([choose_acc], amount=50,
                                 randomize=False, sleep_delay=10)
 while 1:
-  runner2()
+  #runner2()
   time.sleep(1)
   runner1()
   
