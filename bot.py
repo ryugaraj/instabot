@@ -54,5 +54,5 @@ def runner2():
 while 1:
   runner2()
   runner1()
-  time.sleep(3600)
+  time.sleep(1800)
   
