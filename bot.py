@@ -24,7 +24,7 @@ def runner1():
                         u'Amazing :heart_eyes:'])
 
   session.follow_user_followers(['scarlettjohanssonworld'], amount=50,
-                                randomize=False, sleep_delay=10)
+                                randomize=True, sleep_delay=10)
  # session.unfollow_users(amount=30, allFollowing=True, style="LIFO",
   #                       unfollow_after=24*60*60, sleep_delay=5)
   session.end()
@@ -50,7 +50,7 @@ def runner2():
                         u'Amazing :heart_eyes:'])
 
   session.follow_user_followers([choose_acc], amount=50,
-                                randomize=False, sleep_delay=10)
+                                randomize=True, sleep_delay=10)
 while 1:
   runner2()
   runner1()
