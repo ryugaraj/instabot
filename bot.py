@@ -9,26 +9,9 @@ def runner1():
                               headless_browser = True)
 
   session.login()
-  session.set_quota_supervisor(enabled=True,
-                               peak_likes_hourly=70,
-                               peak_comments_hourly=21,
-                               peak_follows_hourly=48,
-                               peak_follows_daily=100,
-                               peak_unfollows_hourly=35,
-                               peak_unfollows_daily=402)
-
-  session.set_user_interact(amount=5, randomize=True, percentage=100, media='Photo')
-  session.set_do_comment(True, percentage=100)
-  session.set_comments([u'My Girl is fire :fire:',
-                        u'So Awesome :flushed:',
-                        u'Amazing :heart_eyes:'])
-
-  session.implicitly_wait(10)
-  session.like_by_tags(['scarlettjohansson'], amount=2)
-  session.follow_user_followers(['scarlettjohanssonworld'], amount=2,
+  session.follow_user_followers(['scarlettjohanssonworld'], amount=50,
                                 randomize=True, sleep_delay=10)
-  session.unfollow_users(amount=2, allFollowing=True, style="LIFO",unfollow_after=24*60*60, sleep_delay=5)
-  session.interact_user_followers(['scarlettjohanssonworld'], amount=2, randomize=True)
+  session.unfollow_users(amount=30, allFollowing=True, style="LIFO",unfollow_after=24*60*60, sleep_delay=5)
   session.end()
 
 def runner2():
@@ -56,5 +39,5 @@ def runner2():
 while 1:
 
   runner1()
-  time.sleep(3600)
+  time.sleep(7*60*60)
   
