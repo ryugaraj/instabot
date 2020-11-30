@@ -23,6 +23,7 @@ def runner1():
                         u'So Awesome :flushed:',
                         u'Amazing :heart_eyes:'])
 
+  session.implicitly_wait(10)
   session.like_by_tags(['scarlettjohansson'], amount=2)
   session.follow_user_followers(['scarlettjohanssonworld'], amount=2,
                                 randomize=True, sleep_delay=10)
