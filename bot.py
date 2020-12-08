@@ -44,12 +44,10 @@ login()
 
 #Comments and Id's 
 
-comments=(list(os.environ.get("comment.hr")))
+comments=['noiice',"It's really funny","You've got to be kidding me",'lol i never thought that way','HAHAHAHAHA']
 
 insta_id=['https://www.instagram.com/code.fy/','https://www.instagram.com/9gag/'] 
-print(comments)
-print(insta_id)
-sleep(10)
+
 def run():
     num_comment=0
     try:
