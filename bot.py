@@ -46,7 +46,7 @@ login()
 
 comments=['noiice',"It's really funny","You've got to be kidding me",'lol i never thought that way','HAHAHAHAHA']
 
-insta_id=['https://www.instagram.com/code.fy/','https://www.instagram.com/9gag/'] 
+insta_id=['https://www.instagram.com/9gag/'] 
 
 def run():
     num_comment=0
@@ -78,11 +78,13 @@ def run():
                         
                         post_btn=browser.find_element_by_xpath("/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/button")
                         post_btn.click()
+                        
+                        sleep(60)
                 
                     if num_comment >=15:
                         num_comment=0
                         sleep(600)
-            sleep(40)
+            
     except Exception as e:
         print(1)
         sleep(10)
