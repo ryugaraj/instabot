@@ -35,7 +35,8 @@ def login():
         not_now2 = browser.find_element_by_xpath('/html/body/div[4]/div/div/div/div[3]/button[2]')
         not_now2.click()
     except Exception as e:
-        print(e.__class__)
+        print(2)
+        sleep(10)
         browser.close()
         login()
 
@@ -82,6 +83,7 @@ def run():
                         sleep(600)
             sleep(40)
     except Exception as e:
+        print(1)
         print(e.__class__)
         run()
 run()
