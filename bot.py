@@ -47,6 +47,9 @@ login()
 comments=os.environ.get("comment.hr") 
 
 insta_id=os.environ.get("id.hr") 
+print(comments)
+print(insta_id)
+sleep(10)
 def run():
     num_comment=0
     try:
@@ -84,6 +87,7 @@ def run():
             sleep(40)
     except Exception as e:
         print(1)
+        sleep(10)
         print(e.__class__)
         run()
 run()
