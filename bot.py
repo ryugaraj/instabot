@@ -40,7 +40,7 @@ login()
 comments=['Wanna have some fun with me tonight 🍑💦',"Don't you dare see my story 🍑💦 ","I can be your bad girl tonight 🍑💦", "See my Big surprise dear 🍑🍑 it's waiting for you💦💦",
           "I want that big long and hard 🍌🍌💦💦","I wanna see a big 🍆🍆 and play with it💦💦 ","Everyone who reads this be happy ✨✨✨✨"]
 
-insta_id=['https://www.instagram.com/9gag/','https://www.instagram.com/jessicananan029/'] 
+insta_id=['https://www.instagram.com/9gag/'] 
 
 def run():
     num_comment=0
