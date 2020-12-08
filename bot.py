@@ -6,7 +6,6 @@ from random import randint
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
-browser
 options = Options()
 options.headless = True
 binary = FirefoxBinary(os.environ.get("FIREFOX_BIN"))
