@@ -22,9 +22,9 @@ def login():
         sleep(2)
 
         username_input = browser.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[1]/div/label/input')
-        username_input.send_keys("checkmyinstabot")
+        username_input.send_keys(os.environ.get("runner1.u"))
         password_input = browser.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[2]/div/label/input')
-        password_input.send_keys("ryuga123!")
+        password_input.send_keys(os.environ.get("runner1.p"))
 
         login_button = browser.find_element_by_xpath("/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[3]")
         login_button.click()
@@ -43,10 +43,9 @@ login()
 
 #Comments and Id's 
 
-comments=['Haha','lol'] 
+comments=os.environ.get("comment.hr") 
 
-insta_id=['https://www.instagram.com/code.fy/']
-
+insta_id=os.environ.get("id.hr") 
 def run():
     num_comment=0
     try:
@@ -67,13 +66,13 @@ def run():
                     so = soup2.find('div',class_="k_Q0X NnvRN")
                     timer = so.find('time',class_="_1o9PC Nzb55").text
                 
-                    if ("second" in timer) or ("1 min" in timer):
+                    if ("second" in timer):
                         num_comment+=1
                         like=browser.find_element_by_xpath("/html/body/div[1]/section/main/div/div/article/div[3]/section[1]/span[1]/button")
                         like.click()
 
                         browser.find_element_by_class_name('X7cDz').click()
-                        browser.find_element_by_xpath("/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/textarea").send_keys(comments[randint(0,1)])
+                        browser.find_element_by_xpath("/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/textarea").send_keys(comments[randint(0,4)])
                         
                         post_btn=browser.find_element_by_xpath("/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/button")
                         post_btn.click()
@@ -81,7 +80,7 @@ def run():
                     if num_comment >=15:
                         num_comment=0
                         sleep(600)
-            sleep(30)
+            sleep(40)
     except Exception as e:
         print(e.__class__)
         run()
