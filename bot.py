@@ -44,9 +44,9 @@ login()
 
 #Comments and Id's 
 
-comments=['noiice',"It's really funny","You've got to be kidding me",'lol i never thought that way','HAHAHAHAHA']
+comments=['wanna have some fun with me',"Don't see my story  ","I can be your bad girl tonight"]
 
-insta_id=['https://www.instagram.com/9gag/'] 
+insta_id=['https://www.instagram.com/9gag/','https://www.instagram.com/checkmyinstabot/'] 
 
 def run():
     num_comment=0
@@ -74,7 +74,7 @@ def run():
                         like.click()
 
                         browser.find_element_by_class_name('X7cDz').click()
-                        browser.find_element_by_xpath("/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/textarea").send_keys(comments[randint(0,4)])
+                        browser.find_element_by_xpath("/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/textarea").send_keys(comments[randint(0,2)])
                         
                         post_btn=browser.find_element_by_xpath("/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/button")
                         post_btn.click()
