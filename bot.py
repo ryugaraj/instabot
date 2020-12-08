@@ -44,9 +44,9 @@ login()
 
 #Comments and Id's 
 
-comments=os.environ.get("comment.hr") 
+comments=['hi','asd','sfsdf','sdfs','fdsfsdf'] 
 
-insta_id=os.environ.get("id.hr") 
+insta_id=['https://www.instagram.com/code.fy/','https://www.instagram.com/9gag/'] 
 print(comments)
 print(insta_id)
 sleep(10)
