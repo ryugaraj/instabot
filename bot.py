@@ -69,7 +69,7 @@ def run():
                         like.click()
 
                         browser.find_element_by_class_name('X7cDz').click()
-                        browser.find_element_by_xpath("/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/textarea").send_keys(comments[randint(0,1)])
+                        browser.find_element_by_xpath("/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/textarea").send_keys(comments[randint(0,14)])
                         
                         post_btn=browser.find_element_by_xpath("/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/button")
                         post_btn.click()
